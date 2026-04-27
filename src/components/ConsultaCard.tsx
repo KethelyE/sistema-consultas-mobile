@@ -23,8 +23,8 @@ export default function ConsultaCard({
   onCancelar,
 }: ConsultaCardProps) {
 
- 
 
+  // Formata um número para moeda brasileira (R$ 150,00)
   function formatarValor(valor: number): string {
     return valor.toLocaleString("pt-BR", {
       style: "currency",
@@ -32,6 +32,7 @@ export default function ConsultaCard({
     });
   }
 
+  // Formata uma data no padrão brasileiro (25/03/2026)
   function formatarData(data: Date): string {
     return data.toLocaleDateString("pt-BR");
   }
